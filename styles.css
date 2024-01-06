@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3e38ff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+.active{
+    font-size: x-large;
+    float: left;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 20px 20px; /* Adjust padding to avoid content being hidden behind fixed navbar */
+}
+
+/* Responsive Navigation */
+@media only screen and (max-width: 768px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+    }
+
+    .menu-icon div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .menu-icon.open div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    nav a.active, nav a:hover {
+        display: block;
+    }
+}
+
+.main-content{
+    display: grid;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    gap: 10px 10px;
+    margin: 10px;
+}
+.grid-item{
+    /* background: lightblue; */
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 26px;    
+    text-align: center;
+    color: white;
+}
+.item1{    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 200px;
+    width: 400px;
+    margin-left: 116px; 
+}
+.item2{
+    background: rgb(147, 147, 147);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 200px;
+    width: 600px;
+    margin-top: 10px;
+}
+.item3{
+    background: rgb(54, 205, 255);
+    grid-column-start: 3;
+    grid-column-end: 7;
+    width: 200px;
+    margin-left: -1040px;
+}
+
+.item4{
+    background: rgb(87, 29, 235);
+    grid-column-start: 4;
+    grid-column-end: 7;
+    width: 200px;
+    margin-left: -802px;
+    margin-top: -111px;
+    margin-bottom: 10px;
+}
+.item5{
+    background: rgb(212, 119, 181);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    width: 200px;
+    margin-bottom: 17px;
+    margin-top: -123px;
+    margin-left: -554px;
+}
+.item6{
+    background: rgb(24, 23, 25);
+    grid-column-start: 6;
+    grid-column-end: 7;
+    width: 200px;
+    margin-bottom: 516px;
+    margin-top: -132px;
+    margin-left: -312px;
+}
+.item7{
+    background: blue;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    margin-left: -1122px;
+    float: left;
+    margin-right: 95px;
+}
+
+.help-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.help-icon:hover {
+    background-color: #0056b3;
+}
+.clearfix{
+
+}
+img,textarea{
+    border-radius: 15px;
+}
+
+
+
+.flex-item71{
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 26px;    
+    text-align: center;
+    color: white;
+
+}
+.child-flex{
+    border: 1px solid rgb(255, 253, 253);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 26px;    
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+.child1{
+    margin: 10px;
+    background: rgb(252, 202, 202);
+    color: black;
+}
+.child2{
+    margin: 10px;
+}
+.child3{
+    margin: 10px;
+}
+
+
+.child-info{        
+    background: white;
+    border-radius: 15px;
+    height: 300px;
+    width: 545px;
+    margin-left: 397px;
+    color: black;
+    margin-top: -320px;
+    font-size: 12pt;    
+}
+
+.btn-next{
+    padding: 5px;
+    background: black;
+    color: white;
+    margin: 105px;
+    margin-right: -339px;
+}
